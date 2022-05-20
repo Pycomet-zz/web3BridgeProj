@@ -10,7 +10,8 @@ const LogoName = styled.h2`
 
 const RoomMarkersDiv = styled.div`
     text-align: left;
-    text-decoration: italic
+    text-decoration: italic;
+    margin-bottom: 1em
 `
 
 export const Header = ({ rooms, slots }) => {
@@ -20,7 +21,7 @@ export const Header = ({ rooms, slots }) => {
             <LogoName>Web3Bridge Room Allocation System</LogoName>
 
             <RoomMarkersDiv>
-                <p>Total Number Of Available Rooms Left - {rooms}</p>
+                <p>Total Number Of Available Rooms Left - {Object.keys(rooms).length}</p>
                 <p>Accomodation slots left - {slots}</p>
             </RoomMarkersDiv>
         </div>
